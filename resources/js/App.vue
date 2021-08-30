@@ -6,12 +6,11 @@
         <li><router-link :to="{ name: 'about' }">About</router-link></li>
       </ul>
     </nav>
-      <router-view></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "app",
 };
