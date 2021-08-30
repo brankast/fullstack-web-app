@@ -13,7 +13,14 @@ import VueRouter from 'vue-router'
 
 import router from './router/index'
 import store from './store/index'
+import './validation/index'
 import App from './App.vue'
+
+import { ValidationProvider } from 'vee-validate';
+import { ValidationObserver } from 'vee-validate';
+
+Vue.component('ValidationProvider', ValidationProvider);
+Vue.component('ValidationObserver', ValidationObserver);
 
 window.Vue.use(VueRouter)
 
